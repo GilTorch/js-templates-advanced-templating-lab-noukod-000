@@ -5,7 +5,7 @@ function init() {
 //   Handlebars.registerHelper("displayIngredient",function(){
 //   return new Handlebars.SafeString("<li name='ingredients'>"+this.name+"</li>")
 // })
-// Handlebars.registerPartial("recipeDetailsPartial",document.getElementById("recipe-details-partial").innerHTML);
+Handlebars.registerPartial("recipeDetailsPartial",document.getElementById("recipe-details-partial").innerHTML);
 //
 // Handlebars.registerPartial("recipeFormPartial",document.getElementById("recipe-form-partials").innerHTML);
 
