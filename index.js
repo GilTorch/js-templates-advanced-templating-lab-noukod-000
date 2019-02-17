@@ -47,7 +47,8 @@ function displayEditForm(){
 }
 
 function updateRecipe(){
-
+let recipeTemplate=document.getElementById("recipe-template").innerHTML;
+renderTemplate(recipe)
 }
 
 
