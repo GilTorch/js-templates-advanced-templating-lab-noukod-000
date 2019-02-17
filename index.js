@@ -46,6 +46,10 @@ function displayEditForm(){
   main.innerHTML=recipeFormTemplateFn({recipe})
 }
 
+function updateRecipe(){
+  
+}
+
 
 
 document.addEventListener("DOMContentLoaded", function(event) {
