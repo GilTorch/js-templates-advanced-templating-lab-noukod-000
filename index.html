@@ -8,7 +8,24 @@
   </head>
   <body>
     <main id="main">
-      <script id="recipe-form-template">
+      <script id="recipe-form-template" type="text/x-handlebars-template">
+        <form id="recipe-form" onsubmit="handleSubmit();return false">
+          <div>
+            <label for="name">Recipe Name:</label>
+            <input id="name" value="{{ name }}" type="text" name="name"/>
+          </div>
+          <div>
+            <label for="description">Recipe Description:</label>
+            <textarea name="description" value="{{ description }}">
+            </textarea>
+          </div>
+          <div>
+            <label>Ingredients:</label>
+            {{#each ingredients}}
+              {{{this}}}
+            {{/each}}
+          </div>
+        </form>
       </script>
     </main>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
