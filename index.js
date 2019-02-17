@@ -2,9 +2,9 @@ let recipe={name:"",description:"",ingredients:new Array(6).fill("<input type='t
 
 function init() {
   //put any page initialization/handlebars initialization here
-//   Handlebars.registerHelper("displayIngredient",function(){
-//   return new Handlebars.SafeString("<li name='ingredients'>"+this.name+"</li>")
-// })
+  Handlebars.registerHelper("displayIngredient",function(){
+  return new Handlebars.SafeString("<li name='ingredients'>"+this.name+"</li>")
+})
 Handlebars.registerPartial("recipeDetailsPartial",document.getElementById("recipe-details-partial").innerHTML);
 //
 // Handlebars.registerPartial("recipeFormPartial",document.getElementById("recipe-form-partials").innerHTML);
