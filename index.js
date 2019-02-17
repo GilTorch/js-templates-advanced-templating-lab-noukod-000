@@ -19,10 +19,7 @@ function renderTemplate(template,root,content){
 
 function createRecipe(){
   recipe={name:"",description:"",ingredients:new Array(6).fill("<input type='text' name='ingredients'/>")}
-    const main=document.getElementById('main');
-  renderTemplate(document.getElementById("recipe-form-template").innerHTML,main,recipe);
-  const showRecipeTemplate=document.getElementById("recipe-details-partial").innerHTML;
-  renderTemplate(showRecipeTemplate,main,recipe)
+  renderTemplate(document.getElementById("recipe-form-template").innerHTML,document.getElementById("main"),recipe);
 }
 
 function handleSubmit(){
