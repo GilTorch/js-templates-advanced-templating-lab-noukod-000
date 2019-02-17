@@ -22,7 +22,6 @@ function createRecipe(){
     const main=document.getElementById('main');
   renderTemplate(document.getElementById("recipe-form-template").innerHTML,main,recipe);
   const showRecipeTemplate=document.getElementById("recipe-details-partial").innerHTML;
-
   renderTemplate(showRecipeTemplate,main,recipe)
 }
 
