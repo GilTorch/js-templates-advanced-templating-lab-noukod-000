@@ -41,5 +41,3 @@ function displayEditForm(){
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
-
-
