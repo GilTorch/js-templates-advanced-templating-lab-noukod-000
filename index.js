@@ -1,3 +1,5 @@
+let recipe={name:"",description:"",ingredients:new Array(6).fill("<input type='text' name='ingredients'/>")}
+
 function init() {
   //put any page initialization/handlebars initialization here
 //   Handlebars.registerHelper("displayIngredient",function(){
