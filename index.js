@@ -48,7 +48,8 @@ function displayEditForm(){
 
 function updateRecipe(){
 let recipeTemplate=document.getElementById("recipe-template").innerHTML;
-renderTemplate(recipe)
+const main=document.getElementById('main');
+renderTemplate(recipeTemplate,main,recipe)
 }
 
 
