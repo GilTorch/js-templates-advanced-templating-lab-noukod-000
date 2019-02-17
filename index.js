@@ -14,7 +14,7 @@ renderTemplate(document.getElementById("recipe-form-template").innerHTML,documen
 }
 
 function renderTemplate(template,root,content){
-  root.innerHTML=Handlebars.compile(template)(content)
+  root.innerHTML+=Handlebars.compile(template)(content)
 }
 
 function createRecipe(){
