@@ -17,6 +17,11 @@ function renderTemplate(template,root,content){
   root.innerHTML=Handlebars.compile(template)(content)
 }
 
+function createRecipe(){
+  recipe={name:"",description:"",ingredients:new Array(6).fill("<input type='text' name='ingredients'/>")}
+  renderTemplate(document.getElementById("recipe-form-template").innerHTML,document.getElementById("main"),recipe);
+}
+
 function handleSubmit(){
   let name=document.getElementById("name").value;
   let description=document.getElementById("description").value;
