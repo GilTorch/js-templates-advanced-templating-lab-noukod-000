@@ -17,7 +17,29 @@ function renderTemplate(template,root,content){
   root.innerHTML=Handlebars.compile(template)(content)
 }
 
+function handleSubmit(){
+  let name=document.getElementById("name").value;
+  let description=document.getElementById("description").value;
+  let ingredients=document.getElementsByName("ingredients").value;
+  recipe={name,description,ingredients}
+  //show recipe details
+  const showRecipeTemplate=document.getElementById("recipe-details-partial").innerHTML;
+  const main=document.getElementById('main');
+  renderTemplate(showRecipeTemplate,root,recipe)
+}
+
+function displayEditForm(){
+  const recipeFormTemplate=document.getElementById("recipe-form-template").innerHTML;
+  const recipeFormTemplateFn=Handlebars.compile(recipeFormTemplate);
+  const main=document.getElementById('main');
+
+  main.innerHTML=recipeFormTemplateFn({recipe})
+}
+
+
 
 document.addEventListener("DOMContentLoaded", function(event) {
   init()
 })
+
+
